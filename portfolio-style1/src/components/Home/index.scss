@@ -1,0 +1,92 @@
+.home-page {
+
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        text-align: left;
+
+    }
+
+    h1 {
+        img {
+            width: 30px;
+            height: 54px;
+            margin-left: 16px;
+            margin-right: 3px;
+            animation: transition 1.8s;
+            transition: transform .8s;
+
+        }
+        
+        img:hover{
+            transform: scale(1.5);
+        }
+
+        color: #ffff;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        letter-spacing: 4px;
+
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: aqua;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: 15px;
+            opacity: 0.6s;
+        }
+
+        &::after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            color: aqua;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6s;
+
+
+        }
+    }
+
+    h2 {
+        color: #8b8b8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: 'sans-serif';
+        letter-spacing: 3px;
+        animation: bounceIn 1s 3.3s backwards;
+    }
+
+    .flat-button {
+        color: aqua;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #3bc7aefa;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 3.4s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: #3bc7aefa;
+            color: #333;
+        }
+
+    }
+}
